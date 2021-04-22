@@ -1,0 +1,240 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+       <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
+       <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+       <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@300&display=swap" rel="stylesheet">
+    <link class="ticon" rel="icon" href="images/logov1.png" type="image/x-icon">
+    <title>Everything Aero-Arriving Soon!</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+        body {
+            margin: 0;
+            padding: 20px;
+            background-image: url(images/Savin-NY-Website-Background-Web.jpg);
+         
+            color: white;
+           background-size: cover;
+            margin-top: 100px;
+           
+
+            font-family: 'Noto Sans', sans-serif;
+            font-size: 24px;
+        }
+        
+        
+
+       
+
+
+.social-link
+{
+    color: black;
+  
+    list-style: none;
+    float: right;
+    text-decoration: none;
+
+}
+.footer-nav li,
+.social-link li
+{
+    display: inline-block;
+    margin-right: 20px;
+    margin-top: 100%;
+}
+.footer-nav li:last-child,
+.social-link li:last-child
+{
+    margin-right: 0;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.fsocial-link li a:link,
+.fsocial-link li a:visited
+{
+    text-decoration: none;
+    
+    color: #888888;
+}
+        .twitt,
+.inst,
+.gma,
+.whap,
+.linkedi
+{
+    text-decoration: none;
+    color: black;
+    
+}
+        footer
+        {
+            color: black;
+            font-size: 25px;
+        }
+.twitt:hover{
+    color: #2ea8d9;
+}
+.inst:hover{
+    color: #C13584;
+}
+.gma:hover
+{
+    color: red;
+}
+.whap:hover
+{
+    color: #25D366;
+}
+.linkedi:hover
+{
+    color: #037df7;
+}
+.wtd
+{
+   
+    font-size: 18px;
+    color: #c4e8d2;
+}
+       
+.dora
+{
+    margin-left: 40%;
+}
+
+        h1 {
+            margin: 0 0 10px;
+            padding: 10px;
+            font-size: 16px;
+            font-weight: normal;
+            background: #333333;
+        }
+        .logo
+        {
+            margin-top: -150px;
+            margin-left: 40%;
+        }
+
+        .splitflap {
+            margin: 0 auto;
+            font-family: fantasy;
+
+            -webkit-perspective-origin: top center;
+            -moz-perspective-origin: top center;
+            -ms-perspective-origin: top center;
+            perspective-origin: top center;
+
+            -webkit-perspective: 900px;
+            -moz-perspective: 900px;
+            -ms-perspective: 900px;
+            perspective: 900px;
+        }
+        #container {
+	text-align: center;
+}
+
+#text {
+	display: inline-block;
+	vertical-align: middle;
+	color: #082d80;
+	letter-spacing: 2px;
+    font-family: fantasy;
+}
+
+.copy
+        {
+            color: black;
+            font-size: 15px;
+            margin-left: 40%;
+            margin-top: 15%;
+        }
+
+
+    </style>
+</head>
+<header>
+    <a href="index.html"><img src="images/logov1.png" class="logo" width="250px" height="250px"></a>
+    </header>
+<body>
+    
+<div class="example">
+
+
+    <div class="do-splitflap"> Arriving Soon </div>
+</div>
+
+//
+    
+    
+   
+    
+ <footer>
+          <div class="row">
+               <div class="col span-1-of-2">
+                   
+                   
+              </div>
+              <div class="col span-2-of-2">
+                  <ul class="social-link">
+                       <li><a class="twitt" href="www.twitter.com"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                      <li><a class="inst" href="https://instagram.com/everything.aero?igshid=1lql7qm8nc4ii"><ion-icon name="logo-instagram"></ion-icon></a></li>
+                      <li><a class="gma" href="https://mail.google.com/mail/u/0/?view=cm&fs=1&to=everythingaeroofficial@gmail.com&tf=1"><ion-icon name="mail-outline"></ion-icon></a></li>
+                      <li><a class="whap" href="https://wa.me/9538099536"><ion-icon name="logo-whatsapp"></ion-icon></a></li>
+                  
+                   </ul>
+              </div>
+            </div>
+        </footer>
+    <p class="copy">Copyright &copy; 2021 EverythingAero</p>
+
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+<script src="js/jquery/jquery.splitflap.js"></script>
+<script>
+    (function ($) {
+        $(document).ready(function () {
+            $('.do-splitflap')
+                    .splitFlap();
+
+            $('.click-splitflap')
+                    .splitFlap({
+                       
+                        textInit:   'Click me ',
+                        autoplay:   false,
+                        onComplete: function () {
+                            console.log('Done !');
+                        }
+                    })
+                    .click(function () {
+                        $(this).splitFlap('splitflap').animate();
+                    });
+
+           
+
+            var ratio = 0.5;
+            $('.resized-splitflap')
+                    .splitFlap({
+                        charWidth:  50 * ratio,
+                        charHeight: 100 * ratio,
+                        imageSize:  (2500 * ratio) + 'px ' + (100 * ratio) + 'px'
+                    });
+        });
+    })(jQuery);
+
+
+</script>
+
+
+
+</body>
+</html>
